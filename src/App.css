@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: rgba(108, 189, 185, 0.3);
 }
 
 .App-logo {
@@ -27,12 +28,134 @@
 .App-link {
   color: #61dafb;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form{
+  padding:20px;  
+  bottom: 0;
+  position: fixed;
+  background-color: #61dafb;
+  z-index: 1;
+  margin:20px;
+  margin-right: 20px;
+  width: 90%;
+  height: auto;
+  border-radius: 45px;
+  
+  
 }
+.form_control{
+  display: flex !important;
+  flex-direction: row !important;  
+    
+}
+.app_input{
+  flex: 1;
+  width:1000px;
+}
+#send_button{
+  flex:0;
+  
+}
+.header{
+  background-color: rgba(187, 198, 211, 0.4);  
+  display: flex;  
+  color: #08121c;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 80px;
+ 
+  }
+  .welcome{
+    color: #d4af06;
+    padding-top: 30;
+  }
+  .logo{
+    color:#3492eb;
+    z-index: 1;
+    font-style: oblique;
+    
+
+  }
+  .contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+    
+
+    }
+    .contact > a{
+      padding-right: 10px;
+      padding-left: 10px;
+     
+    }
+    .linkedin{
+      color:  #0e76a8;
+    }
+     .github{
+       color: #171515;
+     }
+     .insta{
+      color:#8a3ab9;
+     }
+  
+
+@media only screen and (max-width: 540px ){
+  .form_control{
+    display: flex !important;
+    flex-direction: row !important;   
+    justify-content: space-evenly;
+    width :100%;
+  }
+  
+.header{
+  display: flex;
+  flex-direction: row; 
+  height: 80px;
+  width:100%;  
+}
+.welcome{
+  font-size: 14px;
+  color:#d4af06;  
+  padding-top: 50px;
+  margin-left: 20px;
+  width: 200px;
+  z-index: 1;
+  margin-right: -60px;
+}
+.form{
+  width: 90%;
+  margin-right: 20px;
+  position: fixed;
+}
+.logo{
+  font-size: 15px;
+  
+ 
+}
+
+.contact{
+  display: flex;
+  flex-direction: row;
+  margin-left: 90px;
+  
+  
+  }
+  
+  .contact > a{
+    padding-right: 10px;
+    padding-left: 10px;
+   
+  }
+  .linkedin{
+    color:  #0e76a8;
+  }
+   .github{
+     color: #171515;
+   }
+   .insta{
+    color:#8a3ab9;
+   }
+
+}
+
